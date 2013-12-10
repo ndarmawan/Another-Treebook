@@ -1,5 +1,9 @@
 AnotherTreebook::Application.routes.draw do
+  devise_for :users
   resources :statuses
+
+  # Add as per instruction after invoking "devise:install" command
+  root  :to => "statuses#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

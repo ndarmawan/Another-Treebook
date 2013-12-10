@@ -20,4 +20,10 @@ module AnotherTreebook
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
   end
+
+# Add as per instruction after invoking "devise:install" command since
+# heroku programming is not in use
+# !--> DONT WORK <--!
+# config.assets.initialize_on_precompile = false
+
 end
